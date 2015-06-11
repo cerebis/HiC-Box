@@ -1,6 +1,6 @@
-__author__ = 'hervemn'
 # coding: utf-8
 # -*- coding: UTF-8 -*-
+__author__ = 'hervemn'
 import os
 import shutil
 import h5py

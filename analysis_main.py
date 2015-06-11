@@ -76,8 +76,8 @@ def analyze(name,
 #     paired_wise_fastq = True
 #     len_paired_wise_fastq = 3
 #     tot_len_read = 700
-    print genome_fastq
-    print genome_fastq.split(',')
+    print 'genome_fastq',genome_fastq
+    print 'split',genome_fastq.split(',')
     if len(genome_fastq.split(','))<=1:
         motif_read_1 = genome_fastq
         print "Reading "+motif_read_1
@@ -94,8 +94,9 @@ def analyze(name,
         motif_read_1 = genome_fastq.split(',')[0]
         motif_read_2 = genome_fastq.split(',')[1]
     
-    print motif_read_1
-    print motif_read_2
+    print 'genome_fastq',genome_fastq
+    print 'motif_read_1',motif_read_1
+    print 'motif_read_2',motif_read_2
     #######################################################################################################################
     hic_bank = hic_exp.hic_exp(name_bank, tot_len_read, folder_a, folder_b,motif_read_1,motif_read_2,paired_wise_fastq,
         restriction_site,ncpu,tag_length,genome_index, genome_fasta,bowtie2,looping,quality_min,output_folder,speed_looping,

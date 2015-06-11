@@ -191,6 +191,10 @@ def bowtie_fastq(bowtie2, in_a, in_b, gen_index, out_dir,id,n_cpu, looping,quali
     file_out_aligned = os.path.join(tmp_dir,id+'_aligned.sam')
     fastq_out_unaligned_1 = os.path.join(tmp_dir,id+'_A_fastq.txt')
     fastq_out_unaligned_2 = os.path.join(tmp_dir,id+'_B_fastq.txt')
+    print 'id=',id
+    print 'tmp_dir=',tmp_dir
+    print 'file_out_aligned',file_out_aligned
+    print 'fastq_out_unaligned_1={0}\nfastq_out_unaligned_2={1}'.format(fastq_out_unaligned_1,fastq_out_unaligned_2)
 
     if not(os.path.exists(file_out_aligned) and os.path.exists(fastq_out_unaligned_1)
            and os.path.exists((fastq_out_unaligned_2))):
